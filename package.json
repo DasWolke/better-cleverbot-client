@@ -1,10 +1,13 @@
 {
   "name": "better-cleverbot-io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Rewrite of the cleverbot-io module fixing weak points and using Promises",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "npm --no-git-tag-version version patch",
+    "minor": "npm --no-git-tag-version version minor",
+    "major": "npm --no-git-tag-version version major"
   },
   "keywords": [
     "Cleverbot"
