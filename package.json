@@ -1,0 +1,17 @@
+{
+  "name": "better-cleverbot-io",
+  "version": "1.0.0",
+  "description": "A Rewrite of the cleverbot-io module fixing weak points and using Promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Cleverbot"
+  ],
+  "author": "Wolke <wolke@ram.moe>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.15.3"
+  }
+}
