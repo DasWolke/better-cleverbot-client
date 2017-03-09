@@ -1,6 +1,6 @@
 {
   "name": "better-cleverbot-io",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Rewrite of the cleverbot-io module fixing weak points and using Promises",
   "main": "index.js",
   "scripts": {

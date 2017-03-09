@@ -35,7 +35,7 @@ class BetterCleverbotIo {
      */
     create() {
         return new Promise((resolve, reject) => {
-            axios.post(`${base_url}/create`, {data:{user: this.user, key: this.key, nick: this.nick},timeout:3000}).then(res => {
+            axios.post(`${base_url}/create`, {user: this.user, key: this.key, nick: this.nick},{timeout:3000}).then(res => {
                 if (res.data.status === 'success') {
                     resolve();
                 }
@@ -69,7 +69,7 @@ class BetterCleverbotIo {
             if (!input || input === '') {
                 reject('You entered an empty input!');
             }
-            axios.post(`${base_url}/ask`, {data:{user: this.user, key: this.key, nick: this.nick,text:input},timeout:3000}).then(res => {
+            axios.post(`${base_url}/ask`, {user: this.user, key: this.key, nick: this.nick,text:input},{timeout:3000}).then(res => {
                 if (res.data.status === 'success') {
                     resolve(res.data.response);
                 }
