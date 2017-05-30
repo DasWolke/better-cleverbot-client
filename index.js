@@ -37,10 +37,10 @@ class BetterCleverbotIo {
         return new Promise((resolve, reject) => {
             axios.post(`${base_url}/create`, {user: this.user, key: this.key, nick: this.nick},{timeout:3000}).then(res => {
                 if (res.data.status === 'success') {
-                    resolve();
+                    resolve(this);
                 }
                 if (res.data.status === 'Error: reference name already exists') {
-                    resolve();
+                    resolve(this);
                 }
                 reject({error: 'The api emitted an unknown response!', response: res.data.status});
             }).catch(err => {
